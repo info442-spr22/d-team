@@ -26,10 +26,17 @@ On the FAQ Page there will be a list of commonly asked questions about e-waste t
 
 ### Features
 
+<img alt="Home page wireframe" src="/img/home.png" height="350">
+
 The home page (aka the “Learn” page) provides the user with information on what e-waste is, the impacts and causes of electronic waste, and companies that practice responsible electronic production. The information provided on the Learn page will be categorized, as shown above, to inform users about electronic waste related topics. This page will be implemented as static textboxes with links to additional resources for each topic.
+
+<img alt="Map page wireframe" src="/img/map.png" height="350">
+<img alt="Map page filter error state wireframe" src="/img/mapError.png" height="350">
 
 The maps feature will display local e-waste disposal sites on a React Leaflet map. Services must be manually added to the map’s database, as there is currently not a comprehensive database of e-waste disposal sites. The services that are indicated on the map can be curated by the filters feature, which will allow a user to filter for distance, types of e-waste sites (e.g. small devices vs large devices), and whether the site is open and accessible at the moment. If there are no results for the filters selected, then there will be a message highlighted in red to indicate the error state. Each location on the map will have a pin to indicate its location, and the pin can be clicked to highlight more information in the Cards column.
 
 The Cards column(shown on the right side of the frame) displays the e-waste disposal services within the vicinity of the user shown on the map based on the filter inputs. Each card will contain an image of the company providing the service as well as their contact information. Interacting with the card will highlight the service’s location on the map and vice versa.
+
+<img alt="FAQ page wireframe" src="/img/faq.png" height="350">
 
 The FAQ page provides information of commonly asked questions about electronic recycling. Users will be able to scroll through the page to see the answers to different questions as well as search their questions by keywords. The questions will be categorized into different topics to help users find their questions more easily. The search result will change after users finish typing the keywords. Besides some general question about electronic recycling, the page will also include recycling problems with other delicate materials and a list of accepted electronics. Depending on the topics, the content will be implemented using textboxes, images, and links to show the answer to the questions. One possible error state for this page is that the search feature might not working or the keywords they input don’t have any result. If these situations happens, we’ll show a error message under the search bar to let users know what is happening with the search feature.
