@@ -8,7 +8,7 @@
 1.5 The home page will contain text about a list of companies that practice responsible electronic production
 1.6 The home page will contain links to resources (which will open up that link in a new tab) if there is a resource listed in any of the texts on the home page
 
-2. The Map
+2 The Map
 
 2.1 The content of the map will include pins on locations that are indicated in the database
 2.2 If a user selects a pin on the map, it will highlight the pin’s corresponding card
