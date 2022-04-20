@@ -30,7 +30,7 @@
 
 2.7 The content of the map will change dynamically based on the filter choices
 
-2.8 If there are no results for the filters selected, then there will be an error message in the filters section and the cards section will be empty?
+2.8 If there are no results for the filters selected, then there will be an error message in the filters section and the cards section will be empty.
 <br/><br/>
 
 3 The Cards Column on the Map Page
@@ -41,7 +41,7 @@
 
 3.3 Each company card will contain an image.
 
-3.3 Each company card will contain at least one piece of contact information.
+3.4 Each company card will contain at least one piece of contact information.
 
 3.5 Selecting a card will highlight the corresponding company’s location on the map.
 <br/><br/>
