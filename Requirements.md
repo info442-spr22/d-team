@@ -16,7 +16,7 @@
 
 2 The Map
 
-2.1 The content of the map will include pins on locations that are indicated in the database
+2.1 The content of the map will include pins on locations of e-waste recycling services
 
 2.2 If a user selects a pin on the map, it will highlight the pin’s corresponding card
 
@@ -24,9 +24,9 @@
 
 2.4 The user will be able to zoom in and out of the map
 
-2.5 The user will be able to type in an address to move the map display
+2.5 The user will be able to type in an address in the search bar that is above the map and hit the submit button to trigger the update after an address is entered and move the map display
 
-2.6 The filter option will include filters for distance from a chosen location, types of e-waste sites, hours of operation
+2.6 The filter option are checkboxes and will include filters for distance from a chosen location, types of e-waste sites, hours of operation
 
 2.7 The content of the map will change dynamically based on the filter choices
 
@@ -37,15 +37,13 @@
 
 3.1 The content of the cards column will list cards for each company.
 
-3.2 The order of the cards in the list will reflect on their order within the database.
+3.2 Each company card will contain the company’s name.
 
-3.3 Each company card will contain the company’s name.
+3.3 Each company card will contain an image.
 
-3.4 Each company card will contain an image.
+3.3 Each company card will contain at least one piece of contact information.
 
-3.5 Each company card will contain at least one piece of contact information.
-
-3.6 Selecting a card will highlight the corresponding company’s location on the map.
+3.5 Selecting a card will highlight the corresponding company’s location on the map.
 <br/><br/>
 
 4 The FAQ Page
@@ -90,8 +88,6 @@
 
 6 Nonfunctional (minimum 2)
 
-6.1 Images will have alt text that describes the image
+6.1 Text with less than 18 point font unbolded and less than 14 point font bolded will have a contrast ratio of at least 4.5:1
 
-6.2 Text with less than 18 point font unbolded and less than 14 point font bolded will have a contrast ratio of at least 4.5:1
-
-6.3 Text that is at least 18 point font unbolded and at least 14 point font bolded will have a contrast ratio of at least 3:1
+6.2 Text that is at least 18 point font unbolded and at least 14 point font bolded will have a contrast ratio of at least 3:1
