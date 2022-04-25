@@ -67,4 +67,4 @@ Enters a word that’s not on the FAQ list. Expected to see an error message und
 
 ## Defect Management
 
-If a bug is found during testing, the tester will report that bug by opening an issue in GitHub. After reading the issue, the team will decide who to assign the bug to depending on our skills and time availability. 
+If a defect is found during testing, the tester will notify the team via Discord. After reading the problem, the team and particularly the project manager will decide who to assign the issue to depending on our skills and time availability. 
