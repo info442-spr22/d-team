@@ -11,7 +11,7 @@ Developers will test their code locally before pushing to GitHub.
 After push is successfully merged, the product designer will run the acceptance test manually.
 
 ## Test Environment
-We will be focusing on desktop views. Developers will test their code manually and locally on the devices & browser listed below. Code that has been depoloyed on Netlify will be manually tested as well.
+We will be focusing on desktop views. Developers will test their code manually and locally on the devices & browser listed below. Code that has been deployed on Netlify will be manually tested as well.
 
 ### Devices & Browser
 - Windows 11 PC, Google Chrome (1920x1080 resolution)
