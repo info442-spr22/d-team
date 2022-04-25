@@ -13,7 +13,7 @@ After push is successfully merged, the product designer will run the acceptance 
 ## Test Environment
 We will be focusing on desktop views.
 
-### Devices & Browser:
+### Devices & Browser
 - Windows 11 PC, Google Chrome (1920x1080 resolution)
 - MacBook Pro, Google Chrome
 
