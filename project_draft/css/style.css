@@ -88,6 +88,10 @@ main {
   font-size: 24px;
 }
 
+.map-box {
+  margin: 1%;
+}
+
 .hide{
   display:none;
 }
