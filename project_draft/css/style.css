@@ -92,6 +92,10 @@ main {
   margin: 1%;
 }
 
+.h2 {
+  font-size: 48px;
+}
+
 .hide{
   display:none;
 }
