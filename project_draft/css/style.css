@@ -108,7 +108,7 @@ main {
 /* For FAQ page*/
 .question {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .searchbox {
@@ -122,7 +122,7 @@ main {
 input[type=text] {
   width: 400px;
   padding: 8px;
-  font-size: 17px;
+  font-size: 16px;
   border: 2px solid #000000;
   border-radius: 5px;
 }
