@@ -1,43 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="author" content="team D">
-    <meta name="description" content="Dawg E-cycle">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dawg E-cycle</title>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Reggae+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="img/icon.png">
-</head>
-<body>
-  <main>
-    <section class="navigation">
-        <p class="nav-brand-name"><a>Dawg E-cycle</a></p>
-        <nav class="navbar navigation-links ">
-            <ul class="nav navbar-fixed-top">
-                <li class="nav-item"><a class="nav-link text-black" href="index.html">Learn</a></li>
-                <li class="nav-item"><a class="nav-link text-black" href="map.html">Map</a></li>
-                <li class="nav-item"><a class="nav-link text-black" href="FAQ.html">FAQ</a></li>
-            </ul>
-        </nav>
-    </section>
+import React from 'react';
+import _ from 'lodash';
 
-    
-    <section class="content-box">
-      <div class="searchbox">
+export function FaqScreen() {
+  return (
+    <section className="content-box">
+      <div className="searchbox">
         <form>
-            <input type="text" placeholder=" Search for answers" name="search">
+            <input type="text" placeholder=" Search for answers" name="search"/>
             <button type="submit">Submit</button>
         </form>
       </div>
 
 
-      <div class="text-box">
-        <span class="question">
+      <div className="text-box">
+        <span className="question">
         What Can I typically recycle for free? 
         </span>   
         <p>                                                                               
@@ -49,12 +25,12 @@
             <li>Tablets</li>
             <li>E-readers</li>
             <li>Portable DVD players</li>
-          <ul>
+          </ul>
         </p>
       </div>
 
-      <div class="text-box">
-        <span class="question">
+      <div className="text-box">
+        <span className="question">
         What about my other electronics?
         </span>
         <p>
@@ -64,8 +40,8 @@
         </p>
       </div>
 
-      <div class="text-box">
-        <span class="question">
+      <div className="text-box">
+        <span className="question">
         Why recycle electronics?
         </span>
         <p>
@@ -78,8 +54,8 @@
 
           
       
-      <div class="text-box">
-        <span class="question">
+      <div className="text-box">
+        <span className="question">
           What if my recycle equipment still works?
         </span>
         <p>
@@ -91,8 +67,8 @@
 
           
         
-      <div class="text-box">
-        <span class="question">
+      <div className="text-box">
+        <span className="question">
           What is banned from the landfill?
         </span>
         <p>
@@ -102,9 +78,9 @@
       </div>
 
           
-      <div class="text-box">
+      <div className="text-box">
         <p>
-          <span class="question">
+          <span className="question">
             Where can I find computer manufacturer's exchanges, takebacks, and recycling information?
           </span>
           <ul>
@@ -118,16 +94,14 @@
 
 
           
-      <div class="text-box">
+      <div className="text-box">
         <p>
-          <span class="question">
+          <span className="question">
             Where can I find additional information?
           </span>
           U.S. Environmental Protection Agency  - <a href=" https://www.epa.gov/recycle/electronics-donation-and-recycling"> https://www.epa.gov/recycle/electronics-donation-and-recycling</a>
         </p>
       </div>
     </section>
-          
-  </main>      
-</body>    
-</html>
+  );
+}
