@@ -29,7 +29,7 @@ main {
 .navigation {
   position: fixed;
   display: flex;
-  background-color: #cdd8eb;
+  background-color: #BED1F2;
   font-size: 24px;
   justify-content: flex-end;
   width: 100%;
@@ -52,7 +52,7 @@ main {
 }
 
 .nav-link:hover {
-  background-color: white;
+  background-color: #FFFFFF;
   color:#000000
 }
 
@@ -60,7 +60,7 @@ main {
   margin-left: 20px;
   padding: 4px 15px 0px 15px;
   border-radius: 5px;
-  color: black;
+  color: #000000;
 }
 
 .text-black{
@@ -72,20 +72,30 @@ main {
   flex-direction: column;
   color: #000000;
   align-items: flex-start;
-  background: white;
+  background: #FFFFFF;
   margin-top: 60px;
   width: 100%;
   padding: 20px;
   row-gap: 20px;
+  
 }
 
 .text-box {
   padding: 2%;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 5px;
-  color: black;
-  background-color: #cdd8eb;
-  font-size: 24px;
+  width: 100%;
+  color: #000000;
+  background-color: #EEF1F4;
+  font-size: 20px;
+}
+
+.map-box {
+  margin: 1%;
+}
+
+.h2 {
+  font-size: 48px;
 }
 
 .hide{
@@ -95,25 +105,37 @@ main {
   display:block;
 }
 
+/* For FAQ page*/
+.question {
+  font-weight: bold;
+  font-size: 22px;
+}
+
 .searchbox {
   margin: 0 auto;
-  margin-top: 80px;
-  justify-content: start;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
+  
 }
 
 input[type=text] {
-  padding: 6px;
+  width: 400px;
+  padding: 8px;
   font-size: 17px;
+  border: 2px solid #000000;
+  border-radius: 5px;
 }
 .searchbox button {
-  padding: 8px;
+  padding: 6px;
   margin-left: 20px;
-  background: #cdd8eb;
+  background: #BED1F2;
   font-size: 20px;
-  border: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
   cursor: pointer;
 }
 .searchbox button:hover {
-  background: #7ea5e9;
+  background: #ACBFEF;
 }
+
