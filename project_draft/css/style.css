@@ -94,3 +94,26 @@ main {
 .show{
   display:block;
 }
+
+.searchbox {
+  margin: 0 auto;
+  margin-top: 80px;
+  justify-content: start;
+  display: flex;
+}
+
+input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+}
+.searchbox button {
+  padding: 8px;
+  margin-left: 20px;
+  background: #cdd8eb;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.searchbox button:hover {
+  background: #7ea5e9;
+}
