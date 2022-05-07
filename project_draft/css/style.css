@@ -29,7 +29,7 @@ main {
 .navigation {
   position: fixed;
   display: flex;
-  background-color: #cdd8eb;
+  background-color: #BED1F2;
   font-size: 24px;
   justify-content: flex-end;
   width: 100%;
@@ -52,7 +52,7 @@ main {
 }
 
 .nav-link:hover {
-  background-color: white;
+  background-color: #FFFFFF;
   color:#000000
 }
 
@@ -60,7 +60,7 @@ main {
   margin-left: 20px;
   padding: 4px 15px 0px 15px;
   border-radius: 5px;
-  color: black;
+  color: #000000;
 }
 
 .text-black{
@@ -72,7 +72,7 @@ main {
   flex-direction: column;
   color: #000000;
   align-items: flex-start;
-  background: white;
+  background: #FFFFFF;
   margin-top: 60px;
   width: 100%;
   padding: 20px;
@@ -81,11 +81,11 @@ main {
 
 .text-box {
   padding: 2%;
-  border: 2px solid black;
+  border: 2px solid #000000;
   border-radius: 5px;
-  color: black;
-  background-color: #cdd8eb;
-  font-size: 24px;
+  color: #000000;
+  background-color: #EEF1F4;
+  font-size: 20px;
 }
 
 .hide{
