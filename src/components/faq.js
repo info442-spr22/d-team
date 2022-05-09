@@ -102,6 +102,10 @@ export function FaqScreen() {
           U.S. Environmental Protection Agency  - <a href=" https://www.epa.gov/recycle/electronics-donation-and-recycling"> https://www.epa.gov/recycle/electronics-donation-and-recycling</a>
         </p>
       </div>
+      <footer>
+          <p>Copyright &copy; 2022 INFO 442 Group D</p>
+          <p>Contact Info: Dawgs-E-Cycling </p>
+      </footer>
     </section>
   );
 }

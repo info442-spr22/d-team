@@ -3,7 +3,9 @@ import { NavBar } from './nav';
 import { MapScreen } from './map';
 import { LearnScreen } from './learn';
 import { FaqScreen } from './faq';
+import { Footer } from './footer'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 function App() {
 

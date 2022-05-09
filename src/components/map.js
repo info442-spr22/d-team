@@ -54,6 +54,10 @@ export function MapScreen() {
                     </div>
                 </div>
             </div>
+            <footer>
+                <p>Copyright &copy; 2022 INFO 442 Group D</p>
+                <p>Contact Info: Dawgs-E-Cycling </p>
+            </footer>
         </section>
     );
 }

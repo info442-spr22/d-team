@@ -138,3 +138,9 @@ input[type=text] {
   background: #ACBFEF;
 }
 
+/*Footer Css*/
+footer {
+  padding: 20px;
+  font-family: inherit;
+  align-self: flex-end;
+}

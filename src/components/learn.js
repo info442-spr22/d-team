@@ -41,6 +41,10 @@ export function LearnScreen() {
                     <li><a href="https://www.dell.com/en-us/dt/corporate/social-impact/advancing-sustainability.htm" target="_blank">Dell</a></li>
                 </ul>
             </div>
+            <footer>
+                <p>Copyright &copy; 2022 INFO 442 Group D</p>
+                <p>Contact Info: Dawgs-E-Cycling </p>
+            </footer>
         </section>
     );
 }
