@@ -56,7 +56,7 @@ export function MapScreen() {
                                 <p className="card-text">Our company specializes in re-use of all recycled computers, laptops, and Macs.</p>
                                 <a href="http://www.seattlecomputerrecycling.net/" className="card-link">Website</a>
                             </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
