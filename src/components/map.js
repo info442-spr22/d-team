@@ -1,10 +1,9 @@
 import React from 'react';
 import _ from 'lodash';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import jsonData from '../data.json';
 
 function LocationInfo() {
-    const jsonData = require('../data.json');
-
     return (
         <div>
             {jsonData.map((location, index) => (
