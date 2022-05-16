@@ -94,6 +94,10 @@ main {
   min-height: 70vh;
 }
 
+.card {
+  margin: 1%;
+}
+
 .leaflet-container {
   height: 100%;
   width: 100%;

@@ -2,6 +2,24 @@ import React from 'react';
 import _ from 'lodash';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
+function LocationInfo() {
+    const jsonData = require('../data.json');
+
+    return (
+        <div>
+            {jsonData.map((location, index) => (
+                <div key={index} className="card">
+                    <div className="card-body">
+                        <h5 className="card-title">{location.name}</h5>
+                        <h6 className="card-subtitle mb-2 text-muted">{location.address}</h6>
+                        <p className="card-text">{location.desc}</p>
+                        <a href={location.url} className="card-link">Website</a>
+                    </div>    
+                </div>
+            ))}
+        </div>
+    )
+}
 
 export function MapScreen() {
     return (
@@ -48,16 +66,7 @@ export function MapScreen() {
                             />
                         </MapContainer>
                     </div>
-                    <div className="col text-box map-box">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">Seattle Computer Recycling</h5>
-                                <h6 className="card-subtitle mb-2 text-muted">7523 Aurora Ave N, Seattle, WA 98103</h6>
-                                <p className="card-text">Our company specializes in re-use of all recycled computers, laptops, and Macs.</p>
-                                <a href="http://www.seattlecomputerrecycling.net/" className="card-link">Website</a>
-                            </div>
-                        </div>
-                    </div>
+                    <div className="col text-box map-box"><LocationInfo></LocationInfo></div>
                 </div>
             </div>
             <footer>
