@@ -91,6 +91,12 @@ main {
 
 .map-box {
   margin: 1%;
+  min-height: 70vh;
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
 }
 
 .h2 {

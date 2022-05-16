@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 
 export function MapScreen() {
@@ -40,7 +41,12 @@ export function MapScreen() {
                             </form>
                     </div>
                     <div className="col text-box map-box">
-                        Map
+                        <MapContainer center={[47.6553, -122.3035]} zoom={15} scrollWheelZoom={true}>
+                            <TileLayer
+                                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            />
+                        </MapContainer>
                     </div>
                     <div className="col text-box map-box">
                         <div className="card">
