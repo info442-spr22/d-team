@@ -5,6 +5,27 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { FilterMenu } from './filter';
 import jsonData from '../data.json';
 
+function RenderMarker() {
+    return (
+        <div>
+            {jsonData.map((location, index) => (
+                <Marker 
+                    key={index} 
+                    position={{lat: parseFloat(location.lat), lon: parseFloat(location.lon)}}
+                    eventHandlers={{
+                        click: () => {
+                            let card = document.getElementById(index)
+                            card.classList.toggle('card-color')
+                        }
+                }}>
+                    <Popup>
+                        {location.name}
+                    </Popup>    
+                </Marker>
+            ))}
+        </div>
+    )
+}
 
 export function MapScreen() {
     const [currentPlaces, setCurrentPlaces] = useState([{}]);
@@ -104,7 +125,7 @@ export function MapScreen() {
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
                     <div className="col text-box map-box">
-                        <MapContainer center={[47.6553, -122.3035]} zoom={15} scrollWheelZoom={true}>
+                        <MapContainer center={[47.6553, -122.3035]} zoom={10} scrollWheelZoom={true}>
                             <TileLayer
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
