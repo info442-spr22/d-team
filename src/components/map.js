@@ -3,11 +3,11 @@ import _ from 'lodash';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import jsonData from '../data.json';
 
-function LocationInfo() {
+function RenderCard() {
     return (
         <div>
             {jsonData.map((location, index) => (
-                <div key={index} className="card">
+                <div key={index} id={index} className="card">
                     <div className="card-body">
                         <h5 className="card-title">{location.name}</h5>
                         <h6 className="card-subtitle mb-2 text-muted">{location.address}</h6>
@@ -24,7 +24,19 @@ function RenderMarker() {
     return (
         <div>
             {jsonData.map((location, index) => (
-                <Marker key={index} position={{lat: parseFloat(location.lat), lon: parseFloat(location.lon)}}></Marker>
+                <Marker 
+                    key={index} 
+                    position={{lat: parseFloat(location.lat), lon: parseFloat(location.lon)}}
+                    eventHandlers={{
+                        click: () => {
+                            let card = document.getElementById(index)
+                            card.classList.toggle('card-color')
+                        }
+                }}>
+                    <Popup>
+                        {location.name}
+                    </Popup>    
+                </Marker>
             ))}
         </div>
     )
@@ -76,7 +88,7 @@ export function MapScreen() {
                             <RenderMarker></RenderMarker>
                         </MapContainer>
                     </div>
-                    <div className="col text-box map-box"><LocationInfo></LocationInfo></div>
+                    <div className="col text-box map-box"><RenderCard></RenderCard></div>
                 </div>
             </div>
             <footer>
