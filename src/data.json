@@ -2,17 +2,21 @@
     {
         "name":"Seattle Computer Recycling",
         "address":"7523 Aurora Ave N, Seattle, WA 98103",
-        "lat":"47.683920",
-        "lon":"-122.344840",
+        "latlong":[47.683920,-122.344840],
         "desc":"Our company specializes in re-use of all recycled computers, laptops, and Macs.",
-        "url":"http://www.seattlecomputerrecycling.net/"
+        "url":"http://www.seattlecomputerrecycling.net/",
+        "hours":[11,16],
+        "days":["Tue", "Wed", "Thur", "Fri", "Sat"],
+        "location":"Greenwood"
     },
     {
         "name":"Friendly Earth International, Inc.",
         "address":"1560 1st Ave S, Seattle, WA 98134",
-        "lat":"47.588580",
-        "lon":"-122.333940",
+        "latlong":[47.588580,-122.333940],
         "desc":"Friendly Earth Ewaste Recycling Center - an e-Stewards environmentally responsible certified recycler - offers a convenient drop-off site in our Seattle, WA location for e-waste & electronic equipment, including computers, mobile phones, iPhones, servers and computer screens for all businesses and residential clients in the state of Washington.",
-        "url":"https://friendlyearth.org/"
+        "url":"https://friendlyearth.org/",
+        "hours":[9,17],
+        "days":["Mon", "Tue", "Wed", "Thur", "Fri"],
+        "location":"Chinatown"
     }
 ]

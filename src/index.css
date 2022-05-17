@@ -158,3 +158,15 @@ footer {
   font-family: inherit;
   align-self: flex-end;
 }
+
+.warning {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+  background-color: rgb(241, 87, 87);
+}
+
+.hidden {
+  display: none !important;
+}
