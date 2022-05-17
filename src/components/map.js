@@ -5,28 +5,6 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { FilterMenu } from './filter';
 import jsonData from '../data.json';
 
-function RenderMarker() {
-    return (
-        <div>
-            {jsonData.map((location, index) => (
-                <Marker 
-                    key={index} 
-                    position={{lat: parseFloat(location.lat), lon: parseFloat(location.lon)}}
-                    eventHandlers={{
-                        click: () => {
-                            let card = document.getElementById(index)
-                            card.classList.toggle('card-color')
-                        }
-                }}>
-                    <Popup>
-                        {location.name}
-                    </Popup>    
-                </Marker>
-            ))}
-        </div>
-    )
-}
-
 export function MapScreen() {
     const [currentPlaces, setCurrentPlaces] = useState([{}]);
     const [allPlaces, setAllPlaces] = useState([{}]);
@@ -96,9 +74,10 @@ export function MapScreen() {
             <div key={index}>
                 <Marker position={marker.latlong} eventHandlers={{
                     click: (e) => {
-                    console.log('marker clicked', e)
+                        let card = document.getElementById(index)
+                        card.classList.toggle('card-color')
                     },
-                }}></Marker>
+                }}><Popup>{marker.name}</Popup>  </Marker>
             </div>
         )
     });
@@ -106,7 +85,7 @@ export function MapScreen() {
 
     const LocationCard = currentPlaces.map((location, index) => {
         return (
-            <div key={index} className="card">
+            <div key={index} id={index} className="card">
                 <div className="card-body">
                     <h5 className="card-title">{location.name}</h5>
                     <h6 className="card-subtitle mb-2 text-muted">{location.address}</h6>
