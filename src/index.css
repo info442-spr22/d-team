@@ -98,6 +98,10 @@ main {
   margin: 1%;
 }
 
+.card-color {
+  background-color: #CCEACA;
+}
+
 .leaflet-container {
   height: 100%;
   width: 100%;

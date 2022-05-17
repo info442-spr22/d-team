@@ -3,11 +3,11 @@ import _ from 'lodash';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import jsonData from '../data.json';
 
-function LocationInfo() {
+function RenderCard() {
     return (
         <div>
             {jsonData.map((location, index) => (
-                <div key={index} className="card">
+                <div key={index} id={index} className="card">
                     <div className="card-body">
                         <h5 className="card-title">{location.name}</h5>
                         <h6 className="card-subtitle mb-2 text-muted">{location.address}</h6>
@@ -15,6 +15,28 @@ function LocationInfo() {
                         <a href={location.url} className="card-link">Website</a>
                     </div>    
                 </div>
+            ))}
+        </div>
+    )
+}
+
+function RenderMarker() {
+    return (
+        <div>
+            {jsonData.map((location, index) => (
+                <Marker 
+                    key={index} 
+                    position={{lat: parseFloat(location.lat), lon: parseFloat(location.lon)}}
+                    eventHandlers={{
+                        click: () => {
+                            let card = document.getElementById(index)
+                            card.classList.toggle('card-color')
+                        }
+                }}>
+                    <Popup>
+                        {location.name}
+                    </Popup>    
+                </Marker>
             ))}
         </div>
     )
@@ -58,14 +80,15 @@ export function MapScreen() {
                             </form>
                     </div>
                     <div className="col text-box map-box">
-                        <MapContainer center={[47.6553, -122.3035]} zoom={15} scrollWheelZoom={true}>
+                        <MapContainer center={[47.6553, -122.3035]} zoom={10} scrollWheelZoom={true}>
                             <TileLayer
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             />
+                            <RenderMarker></RenderMarker>
                         </MapContainer>
                     </div>
-                    <div className="col text-box map-box"><LocationInfo></LocationInfo></div>
+                    <div className="col text-box map-box"><RenderCard></RenderCard></div>
                 </div>
             </div>
             <footer>
