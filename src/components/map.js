@@ -20,6 +20,16 @@ function LocationInfo() {
     )
 }
 
+function RenderMarker() {
+    return (
+        <div>
+            {jsonData.map((location, index) => (
+                <Marker key={index} position={{lat: parseFloat(location.lat), lon: parseFloat(location.lon)}}></Marker>
+            ))}
+        </div>
+    )
+}
+
 export function MapScreen() {
     return (
         <section className="content-box">
@@ -58,11 +68,12 @@ export function MapScreen() {
                             </form>
                     </div>
                     <div className="col text-box map-box">
-                        <MapContainer center={[47.6553, -122.3035]} zoom={15} scrollWheelZoom={true}>
+                        <MapContainer center={[47.6553, -122.3035]} zoom={10} scrollWheelZoom={true}>
                             <TileLayer
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                             />
+                            <RenderMarker></RenderMarker>
                         </MapContainer>
                     </div>
                     <div className="col text-box map-box"><LocationInfo></LocationInfo></div>
