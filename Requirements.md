@@ -88,6 +88,6 @@
 
 6 Nonfunctional (minimum 2)
 
-6.1 Text with less than 18 point font unbolded and less than 14 point font bolded will have a contrast ratio of at least 4.5:1
+6.1 `complete #34` Text with less than 18 point font unbolded and less than 14 point font bolded will have a contrast ratio of at least 4.5:1
 
-6.2 Text that is at least 18 point font unbolded and at least 14 point font bolded will have a contrast ratio of at least 3:1
+6.2 `complete #34` Text that is at least 18 point font unbolded and at least 14 point font bolded will have a contrast ratio of at least 3:1
