@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import _ from 'lodash';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import Geocode from 'react-geocode';
 
 import { FilterMenu } from './filter';
 import jsonData from '../data.json';
@@ -96,6 +97,20 @@ export function MapScreen() {
             </div>
         )
     });
+
+    function GetAddress() {
+        Geocode.setApiKey("AIzaSyA5Y5c2fzBT8dvNCv2ne2L9zyklbWBBDqg");
+        Geocode.fromAddress(document.getElementById('address-search').value).then(
+            (response) => {
+              const { lat, lng } = response.results[0].geometry.location;
+              let latlng = [lat, lng];
+              map.setView(latlng, 15)
+            },
+            (error) => {
+              console.error(error);
+            }
+          );
+    }
     
     return (
         <section className="content-box">
@@ -105,6 +120,10 @@ export function MapScreen() {
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
                     <div className="col text-box map-box">
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded" id="address-search" placeholder="Address" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-primary" onClick={() => GetAddress()}>Search</button>
+                        </div>
                         <MapContainer center={[47.6553, -122.3035]} zoom={10} scrollWheelZoom={true} ref={setMap}>
                             <TileLayer
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
