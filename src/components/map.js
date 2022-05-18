@@ -6,6 +6,7 @@ import { FilterMenu } from './filter';
 import jsonData from '../data.json';
 
 export function MapScreen() {
+    const [map, setMap] = useState(null);
     const [currentPlaces, setCurrentPlaces] = useState([{}]);
     const [allPlaces, setAllPlaces] = useState([{}]);
     const [filterWarning, setFilterWarning] = useState(false);
@@ -77,7 +78,7 @@ export function MapScreen() {
                         let card = document.getElementById(index)
                         card.classList.toggle('card-color')
                     },
-                }}><Popup>{marker.name}</Popup>  </Marker>
+                }}><Popup>{marker.name}</Popup></Marker>
             </div>
         )
     });
@@ -85,17 +86,18 @@ export function MapScreen() {
 
     const LocationCard = currentPlaces.map((location, index) => {
         return (
-            <div key={index} id={index} className="card">
+            <div key={index} id={index} className="card" >
                 <div className="card-body">
                     <h5 className="card-title">{location.name}</h5>
                     <h6 className="card-subtitle mb-2 text-muted">{location.address}</h6>
                     <p className="card-text">{location.desc}</p>
                     <a href={location.url} className="card-link">Website</a>
-                </div>    
+                </div>
+                <button type="button" class="btn btn-outline-primary" onClick={() => map.setView(location.latlong, 15)}>Locate on Map</button>    
             </div>
         )
     });
-
+    
     return (
         <section className="content-box">
             <div className="container-fluid">
@@ -104,7 +106,7 @@ export function MapScreen() {
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
                     <div className="col text-box map-box">
-                        <MapContainer center={[47.6553, -122.3035]} zoom={10} scrollWheelZoom={true}>
+                        <MapContainer center={[47.6553, -122.3035]} zoom={10} scrollWheelZoom={true} ref={setMap}>
                             <TileLayer
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
