@@ -7,7 +7,8 @@
         "url":"http://www.seattlecomputerrecycling.net/",
         "hours":[11,16],
         "days":["Tue", "Wed", "Thur", "Fri", "Sat"],
-        "location":"Greenwood"
+        "location":"Greenwood",
+        "img":"https://i.ytimg.com/vi/DKHsNCBxhYw/maxresdefault.jpg"
     },
     {
         "name":"Friendly Earth International, Inc.",
@@ -17,7 +18,8 @@
         "url":"https://friendlyearth.org/",
         "hours":[9,17],
         "days":["Mon", "Tue", "Wed", "Thur", "Fri"],
-        "location":"Chinatown"
+        "location":"Chinatown",
+        "img":"https://friendlyearth.org/wp-content/uploads/2016/09/FE-PNG-logo-2016small.png"
     },
     {
         "name":"Living Green Technology",
@@ -27,7 +29,8 @@
         "url":"https://www.livinggreentechnology.org/",
         "hours":[10,14],
         "days":["Wed", "Thur", "Fri", "Sat", "Sun"],
-        "location":"Northlake"
+        "location":"Northlake",
+        "img":"https://www.livinggreentechnology.org/wp-content/uploads/2021/07/green-and-grey.png"
     },
     {
         "name":"RE-PC Recycled Computers and Peripherals",
@@ -37,7 +40,8 @@
         "url":"http://www.repc.com/index.html",
         "hours":[10,19],
         "days":["Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
-        "location":"Chinatown"
+        "location":"Chinatown",
+        "img":"https://s3-media0.fl.yelpcdn.com/bphoto/0ZS2b3LUOrv8ILbJHD3ciA/l.jpg"
     },
     {
         "name":"Evergreen Recycling",
@@ -47,7 +51,8 @@
         "url":"https://www.evergreenrecycling.com/",
         "hours":[9,17],
         "days":["Mon", "Tue", "Wed", "Thur", "Fri"],
-        "location":"Chinatown"
+        "location":"Chinatown",
+        "img":"https://i.ytimg.com/vi/RIgdf7G1Hig/maxresdefault.jpg"
     },
     {
         "name":"Recycling Depot",
@@ -57,6 +62,7 @@
         "url":"https://recycledepot.center/",
         "hours":[8,16],
         "days":["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"],
-        "location":"Georgetown"
+        "location":"Georgetown",
+        "img":"https://recycledepot.center/wp-content/uploads/elementor/thumbs/newlogo-blue-glase-1-pjvzyii1vvtbumyn45xhynj4xustfriwdxuj6a96wy.png"
     }
 ]
