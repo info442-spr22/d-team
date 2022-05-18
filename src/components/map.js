@@ -80,7 +80,7 @@ export function MapScreen() {
             });
             if(_.isEmpty(filteredPlaces)) { //current Places are the same
                 setFilterWarning(true);
-                setCurrentPlaces(currentPlaces);
+                setCurrentPlaces([]);
             } else { //displays the filtered Places
                 setFilterWarning(false);
                 setCurrentPlaces(filteredPlaces);
