@@ -77,7 +77,7 @@ export function MapScreen() {
                         let card = document.getElementById(index)
                         card.classList.toggle('card-color')
                     },
-                }}><Popup>{marker.name}</Popup>  </Marker>
+                }}><Popup>{marker.name}</Popup></Marker>
             </div>
         )
     });
