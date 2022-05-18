@@ -170,3 +170,27 @@ footer {
 .hidden {
   display: none !important;
 }
+
+.categories-title {
+  font-size: 26px;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.error-box {
+  padding: 2%;
+  border-radius: 5px;
+  width: 100%;
+  color: #000000;
+  background-color: #FFCFCF;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 24px;
+  
+}
