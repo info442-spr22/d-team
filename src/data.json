@@ -30,16 +30,6 @@
         "location":"Northlake"
     },
     {
-        "name":"Living Green Technology",
-        "address":"3417 Evanston Ave N Unit 224, Seattle, WA 98103",
-        "latlong":[47.649520,-122.343580],
-        "desc":"We make information and communication technology accessible to under-served communities around the world.",
-        "url":"https://interconnection.org/",
-        "hours":[10,15],
-        "days":["Mon", "Tue", "Wed", "Thur", "Fri"],
-        "location":"Northlake"
-    },
-    {
         "name":"RE-PC Recycled Computers and Peripherals",
         "address":"1565 6th Ave S, Seattle, WA 98134",
         "latlong":[47.588580,-122.326340],
