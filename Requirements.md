@@ -16,15 +16,15 @@
 
 2 The Map
 
-2.1 The content of the map will include pins on locations of e-waste recycling services
+2.1 `complete #42` The content of the map will include pins on locations of e-waste recycling services
 
-2.2 If a user selects a pin on the map, it will highlight the pin’s corresponding card
+2.2 `complete #42` If a user selects a pin on the map, it will highlight the pin’s corresponding card
 
-2.3 The user will be able to drag to move around the map
+2.3 `complete #40` The user will be able to drag to move around the map
 
-2.4 The user will be able to zoom in and out of the map
+2.4 `complete #40` The user will be able to zoom in and out of the map
 
-2.5 The user will be able to type in an address in the search bar that is above the map and hit the submit button to trigger the update after an address is entered and move the map display
+2.5 `complete #54` The user will be able to type in an address in the search bar that is above the map and hit the submit button to trigger the update after an address is entered and move the map display
 
 2.6 The filter option are checkboxes and will include filters for distance from a chosen location, types of e-waste sites, hours of operation
 
@@ -35,15 +35,15 @@
 
 3 The Cards Column on the Map Page
 
-3.1 The content of the cards column will list cards for each company.
+3.1 `complete #41` The content of the cards column will list cards for each company.
 
-3.2 Each company card will contain the company’s name.
+3.2 `complete #41` Each company card will contain the company’s name.
 
-3.3 Each company card will contain an image.
+3.3 `complete #52` Each company card will contain an image.
 
-3.4 Each company card will contain at least one piece of contact information.
+3.4 `complete #41` Each company card will contain at least one piece of contact information.
 
-3.5 Selecting a card will highlight the corresponding company’s location on the map.
+3.5 `complete #45 (view comment in PR)` Selecting a card will highlight the corresponding company’s location on the map.
 <br/><br/>
 
 4 The FAQ Page
