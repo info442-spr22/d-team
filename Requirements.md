@@ -26,11 +26,11 @@
 
 2.5 `complete #54` The user will be able to type in an address in the search bar that is above the map and hit the submit button to trigger the update after an address is entered and move the map display
 
-2.6 The filter option are checkboxes and will include filters for distance from a chosen location, types of e-waste sites, hours of operation
+2.6 `complete #43` The filter option are checkboxes and will include filters for distance from a chosen location, types of e-waste sites, hours of operation
 
-2.7 The content of the map will change dynamically based on the filter choices
+2.7 `complete #43` The content of the map will change dynamically based on the filter choices
 
-2.8 If there are no results for the filters selected, then there will be an error message in the filters section and the cards section will be empty.
+2.8 `complete #55` If there are no results for the filters selected, then there will be an error message in the filters section and the cards section will be empty.
 <br/><br/>
 
 3 The Cards Column on the Map Page
@@ -71,19 +71,19 @@
 
 5 General
 
-5.1 The System will have a navigation menu at the top of each page
+5.1 `complete #27` The System will have a navigation menu at the top of each page
 
-5.2 The navigation menu will have the website name on the left corner.
+5.2 `complete #27` The navigation menu will have the website name on the left corner.
 
-5.3 The navigation menu will have links to the FAQ, Map, and Learn pages
+5.3 `complete #27` The navigation menu will have links to the FAQ, Map, and Learn pages
 
 5.4 The page that the user is on will be bolded in the navigation menu
 
-5.5 There will be a footer at the bottom of each page
+5.5 `complete (no PR)` There will be a footer at the bottom of each page
 
 5.6 The footer will have contact information
 
-5.7 The footer will have information about who created the website
+5.7 `complete (no PR)` The footer will have information about who created the website
 <br/><br/>
 
 6 Nonfunctional (minimum 2)
