@@ -48,8 +48,8 @@ export function MapScreen() {
             filteredPlaces = allPlaces.filter((item) => {
                 const eventRequirementsArray = [];
                 let applicableFilters = 0;
-                if("upcoming_event" in radioValueObj) {
-                const upcomingEventValue = radioValueObj.upcoming_event;
+                if("availability" in radioValueObj) {
+                const upcomingEventValue = radioValueObj.availability;
                 if((todayDate.getHours() <= item.hours[1] && todayDate.getHours() >= item.hours[0]) || upcomingEventValue === "all") {
                     applicableFilters++;
                     eventRequirementsArray.push(true);
@@ -61,18 +61,16 @@ export function MapScreen() {
                 applicableFilters++;
                 for(let placeFilter of checkboxObj.location) {
                     if(placeFilter === item.location) {
-                    eventRequirementsArray.push(true);
+                        eventRequirementsArray.push(true);
                     }
                 }
                 }
                 if("day_of_week" in checkboxObj && checkboxObj.day_of_week.length) { //checks time of day of each event
                 applicableFilters++;
                 for(let timeFilter of checkboxObj.day_of_week) {
-                    console.log(item.days);
                     if(item.days.includes(timeFilter)) {
                         eventRequirementsArray.push(true);
                     }
-                    console.log(eventRequirementsArray);
                 }
                 }
                 if(eventRequirementsArray.length === applicableFilters) {

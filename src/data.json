@@ -18,5 +18,55 @@
         "hours":[9,17],
         "days":["Mon", "Tue", "Wed", "Thur", "Fri"],
         "location":"Chinatown"
+    },
+    {
+        "name":"Living Green Technology",
+        "address":"3417 Evanston Ave N Unit 224, Seattle, WA 98103",
+        "latlong":[47.650520,-122.351662],
+        "desc":"Living Green Technology offers comprehensive, hassle-free electronics recycling services to individuals and organizations across Washington and Oregon State.",
+        "url":"https://www.livinggreentechnology.org/",
+        "hours":[10,14],
+        "days":["Wed", "Thur", "Fri", "Sat", "Sun"],
+        "location":"Northlake"
+    },
+    {
+        "name":"Living Green Technology",
+        "address":"3417 Evanston Ave N Unit 224, Seattle, WA 98103",
+        "latlong":[47.649520,-122.343580],
+        "desc":"We make information and communication technology accessible to under-served communities around the world.",
+        "url":"https://interconnection.org/",
+        "hours":[10,15],
+        "days":["Mon", "Tue", "Wed", "Thur", "Fri"],
+        "location":"Northlake"
+    },
+    {
+        "name":"RE-PC Recycled Computers and Peripherals",
+        "address":"1565 6th Ave S, Seattle, WA 98134",
+        "latlong":[47.588580,-122.326340],
+        "desc":"The three principles of environmental responsibility are reduce, reuse and recycle. In keeping with those concepts, since 1994 RE-PC has been reducing the amount of e-waste going to our landfills, reusing computer technology by providing the public with access through our retail stores, and recycling end-of-life materials by responsibly distributing them to processors.",
+        "url":"http://www.repc.com/index.html",
+        "hours":[10,19],
+        "days":["Mon", "Tue", "Wed", "Thur", "Fri", "Sat"],
+        "location":"Chinatown"
+    },
+    {
+        "name":"Evergreen Recycling",
+        "address":"506 2nd Ave, Seattle, WA 98104",
+        "latlong":[47.605881,-122.335800],
+        "desc":"Providing cost-effective business solutions for corporate sustainability mandates",
+        "url":"https://www.evergreenrecycling.com/",
+        "hours":[9,17],
+        "days":["Mon", "Tue", "Wed", "Thur", "Fri"],
+        "location":"Chinatown"
+    },
+    {
+        "name":"Recycling Depot",
+        "address":"6004 Corson Ave S, Seattle, WA 98108",
+        "latlong":[47.548340,-122.320690],
+        "desc":"The Recycling Depot has been operating in South Seattle and has grown to be the City’s premier MULTI-COMMODITY recycling center, helping the public, commercial, industrial and governmental entities keep more than 60,000 tons of recyclable material out of the waste stream per year.",
+        "url":"https://recycledepot.center/",
+        "hours":[8,16],
+        "days":["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"],
+        "location":"Georgetown"
     }
 ]
