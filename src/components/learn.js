@@ -5,12 +5,15 @@ import _ from 'lodash';
 export function LearnScreen() {
     return (
         <section className="content-box">
+            <h1>About E-Waste</h1>
+
             <div className="text-box">
+                <span className="question">
+                    What It Is and Its Impacts
+                </span>
                 <p>
                     E-waste, or electronic waste, are electronic products that are no longer of value to their users and
-                    are discarded.
-
-                    Improper disposal of e-waste poses significant environmental and health problems.
+                    are discarded. Improper disposal of e-waste poses significant environmental and health problems:
                 </p>
                 <ul>
                     <li>Poisonous chemicals spread to soil and water</li>
@@ -21,7 +24,11 @@ export function LearnScreen() {
                     </li>
                 </ul>
             </div>
+
             <div className="text-box">
+                <span className="question">
+                    Causes and How We Can Tackle It Together 
+                </span>
                 <p>
                     Irresponsible disposal of e-waste is an increasing problem because the consumption rate of
                     electronic devices is growing rapidly, but opportunities for properly recycling e-waste are not
@@ -29,7 +36,11 @@ export function LearnScreen() {
                     services nearby and learn about frequently asked questions.
                 </p>
             </div>
+
             <div className="text-box">
+                <span className="question">
+                    Sustainable Companies
+                </span>
                 <p>
                     Want to purchase electronics from companies that practice responsible electronic production? Here
                     are some companies where you can get started:
@@ -41,6 +52,7 @@ export function LearnScreen() {
                     <li><a href="https://www.dell.com/en-us/dt/corporate/social-impact/advancing-sustainability.htm" target="_blank">Dell</a></li>
                 </ul>
             </div>
+
             <footer>
                 <p>Copyright &copy; 2022 INFO 442 Group D</p>
                 <p>Contact Info: Dawgs-E-Cycling </p>
