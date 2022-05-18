@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const checkboxOptions = [{category: "Location", options: ["Greenwood", "Chinatown"], name: "locationRadioBtn"},{category: "Days Of Week", options: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"], name: "dayOfWeekRadioBtn"}];
+const checkboxOptions = [{category: "Location", options: ["Greenwood", "Chinatown", "Northlake", "Georgetown"], name: "locationRadioBtn"},{category: "Days Of Week", options: ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"], name: "dayOfWeekRadioBtn"}];
 const radioOptions =[{value: 1, text: "Currently Open"}, {value: "all", text: "All Locations"}];
 
 function CheckboxOptionMenu(props) {
@@ -61,7 +61,7 @@ function RadioOptionMenu(props) {
   return (
     <div className="card mt-3 mb-3 filter-font">
       <div className="card-header">
-        <strong>Upcoming Events</strong>
+        <strong>Availability</strong>
       </div>
       <div className="card-body d-block">
         {optionList}
@@ -75,7 +75,7 @@ export function FilterMenu(props) {
   const [radioValue, setRadioValue] = useState({});
 
   const handleRadioBtn = (radioBtnValue) => {
-    setRadioValue({upcoming_event: radioBtnValue});
+    setRadioValue({availability: radioBtnValue});
   }
 
   const handleCheckbox = (checkboxArray, category) => {
