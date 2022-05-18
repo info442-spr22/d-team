@@ -22,7 +22,6 @@ const searchInput = document.getElementById("search");
       var x = document.getElementById(qa.id);
       if(!qa.content.toLowerCase().includes(value)){
         x.style.display = "none"
-        result.push("none")
       }else {
         x.style.display = "block"
         result.push("show")
@@ -34,7 +33,6 @@ const searchInput = document.getElementById("search");
   const count = 0
   for (var i = 0; i < result.length; i++) { 
     if (result[i] = "show"){
-      count = -1
       count++
     }
 
