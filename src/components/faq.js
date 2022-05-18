@@ -1,42 +1,40 @@
 import React from 'react';
 import _ from 'lodash';
+
 document.addEventListener("DOMContentLoaded", function(event) { 
   const searchInput = document.getElementById("search");
-  let qalist = []
-  const q1 = document.getElementById('1');
-  const q2 = document.getElementById('2');
-  const q3 = document.getElementById('3');
-  const q4 = document.getElementById('4');
-  const q5 = document.getElementById('5');
-  const q6 = document.getElementById('6');
-  const q7 = document.getElementById('7');
-  qalist.push({id:1,content:q1},
-    {id:2,content:q2.textContent},{id:3,content:q3.textContent},
-    {id:4,content:q4.textContent},{id:5,content:q5.textContent},
-    {id:6,content:q6.textContent},{id:7,content:q7.textContent})
-  console.log(qalist)
-  const result = []
-  searchInput.addEventListener("input", e => {
-    const value = e.target.value.toLowerCase()
-    qalist.forEach(qa => {
-      var x = document.getElementById(qa.id);
-      if(!qa.content.toLowerCase().includes(value)){
-        x.style.display = "none"
-      }else {
-        x.style.display = "block"
-      }
+    let qalist = []
+    const q1 = document.getElementById('1').textContent;
+    const q2 = document.getElementById('2').textContent;
+    const q3 = document.getElementById('3').textContent;
+    const q4 = document.getElementById('4').textContent;
+    const q5 = document.getElementById('5').textContent;
+    const q6 = document.getElementById('6').textContent;
+    const q7 = document.getElementById('7').textContent;
+    qalist.push({id:1,content:q1},
+      {id:2,content:q2},{id:3,content:q3},
+      {id:4,content:q4},{id:5,content:q5},
+      {id:6,content:q6},{id:7,content:q7})
+    console.log(qalist)
+    searchInput.addEventListener("input", e => {
+      const value = e.target.value.toLowerCase()
+      qalist.forEach(qa => {
+        var x = document.getElementById(qa.id);
+        if(!qa.content.toLowerCase().includes(value)){
+          x.style.display = "none"
+        }else {
+          x.style.display = "block"
+        }
+      })
+      
     })
-    
-  })
-  const error = document.getElementById('error');
-
-  console.log(result)
-  if(q1.style.display === "none"||q2.style.display === "none"||
-  q3.style.display === "none"||q3.style.display === "none"||q4.style.display === "none"||
-  q5.style.display === "none"||q6.style.display === "none"||q7.style.display === "none"){
-    error.style.display = "block"
-  }
 });
+
+
+
+
+
+
 
 
 export function FaqScreen() {
@@ -157,5 +155,6 @@ export function FaqScreen() {
           <p>Contact Info: Dawgs-E-Cycling </p>
       </footer>
     </section>
+    
   );
 }
