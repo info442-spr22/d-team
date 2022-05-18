@@ -77,11 +77,11 @@
 
 5.3 `complete #27` The navigation menu will have links to the FAQ, Map, and Learn pages
 
-5.4 The page that the user is on will be bolded in the navigation menu
+5.4 `incomplete` The page that the user is on will be bolded in the navigation menu
 
 5.5 `complete (no PR)` There will be a footer at the bottom of each page
 
-5.6 The footer will have contact information
+5.6 `complete (no PR` The footer will have contact information
 
 5.7 `complete (no PR)` The footer will have information about who created the website
 <br/><br/>
