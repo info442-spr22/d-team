@@ -1,17 +1,17 @@
 
 1 The home page
 
-1.1 The home page will contain a title
+1.1 `complete #50` The home page will contain a title
 
-1.2 The home page will contain text about what e-waste is
+1.2 `complete #29` The home page will contain text about what e-waste is
 
-1.3 The home page will contain text about the impacts of e-waste
+1.3 `complete #29` The home page will contain text about the impacts of e-waste
 
-1.4 The home page will contain text about the causes of e-waste
+1.4 `complete #29` The home page will contain text about the causes of e-waste
 
-1.5 The home page will contain text about a list of companies that practice responsible electronic production
+1.5 `complete #29` The home page will contain text about a list of companies that practice responsible electronic production
 
-1.6 The home page will contain links to resources (which will open up that link in a new tab) if there is a resource listed in any of the texts on the home page
+1.6 `complete #32` The home page will contain links to resources (which will open up that link in a new tab) if there is a resource listed in any of the texts on the home page
 <br/><br/>
 
 2 The Map
