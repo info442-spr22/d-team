@@ -95,8 +95,18 @@ main {
   overflow-x:hidden;
 }
 
+.map-box {
+  margin: 1%;
+  height: 100vh;
+  overflow: auto;
+}
+
 .card {
   margin: 3%;
+}
+
+.w-100 {
+  display: none;
 }
 
 .card-color {
