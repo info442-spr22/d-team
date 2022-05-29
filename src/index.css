@@ -95,6 +95,12 @@ main {
   overflow-x:hidden;
 }
 
+.map-box {
+  margin: 1%;
+  height: 100vh;
+  overflow: auto;
+}
+
 .card {
   margin: 3%;
 }
@@ -109,6 +115,7 @@ main {
 
 .leaflet-container {
   min-height: 80vh;
+  width: 100%;
 }
 
 .h2 {

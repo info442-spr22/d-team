@@ -118,12 +118,13 @@ export function MapScreen() {
     
     return (
         <section className="content-box">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col text-box">
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
                     <div class="w-100"></div>
-                    <div className="col text-box">
+                    <div className="col text-box map-box">
 
                         <div class="input-group">
                             <input type="text" class="form-control rounded" id="address-search" placeholder="Address" aria-label="Search" aria-describedby="search-addon" />
@@ -144,6 +145,7 @@ export function MapScreen() {
                         {LocationCard}     
                     </div>
                 </div>
+            </div>
             <footer>
                 <p>Copyright &copy; 2022 INFO 442 Group D</p>
                 <p>Contact Info: Dawgs-E-Cycling </p>
