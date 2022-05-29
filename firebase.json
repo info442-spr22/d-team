@@ -6,6 +6,21 @@
       "**/.*",
       "**/node_modules/**"
     ],
+
+    "redirects": [ {
+      "source": "/learn",
+      "destination": "/learn",
+      "type": 301
+    }, {
+      "source": "/map",
+      "destination": "/map",
+      "type": 301
+    }, {
+      "source": "/faq",
+      "destination": "/faq",
+      "type": 301
+    } ],
+
     "rewrites": [ {
       "source": "**",
       "destination": "/index.html"
