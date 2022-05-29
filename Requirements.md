@@ -48,25 +48,25 @@
 
 4 The FAQ Page
 
-4.1 There will be a list of Frequently asked questions
+4.1 `complete #18` There will be a list of Frequently asked questions
 
-4.2 The FAQ list will be bulleted
+4.2 `complete #18` The FAQ list will be bulleted
 
-4.3 The list will be categorized into different topics
+4.3 `complete #63` The list will be categorized into different topics
 
-4.4 There will be a search bar below the navigation bar
+4.4 `complete #36` There will be a search bar below the navigation bar
 
-4.5 The user will be able to type words in the search bar
+4.5 `complete #36` The user will be able to type words in the search bar
 
-4.6 The results will change to include results with words that the user searched for
+4.6 `complete #63` The results will change to include results with words that the user searched for
 
-4.7 The results of the search will appear as the user types in the letters, instantly.
+4.7 `complete #63` The results of the search will appear as the user types in the letters, instantly.
 
-4.8 Below the FAQ questions, there will be a list of accepted electronics
+4.8 `complete #63` Below the FAQ questions, there will be a list of accepted electronics
 
-4.9 The accepted electronics list will be bulleted
+4.9 `complete #18` The accepted electronics list will be bulleted
 
-4.10 If the user enters a word that’s not on the FAQ list, there will be an error message under the search bar
+4.10 `complete #63` If the user enters a word that’s not on the FAQ list, there will only show the name of each category
 <br/><br/>
 
 5 General

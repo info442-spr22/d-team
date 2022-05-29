@@ -32,6 +32,7 @@ export function MapScreen() {
                 if("availability" in radioValueObj) {
                     const upcomingEventValue = radioValueObj.availability;
                     const todayDay = dayOpen[todayDate.getDay()];
+
                     console.log(item.days + "  " + todayDay + "  " + todayDate.getDay());
                     if((item.days.includes(todayDay) && todayDate.getHours() <= item.hours[1] && todayDate.getHours() >= item.hours[0]) || upcomingEventValue === "all") {
                         applicableFilters++;
@@ -121,7 +122,9 @@ export function MapScreen() {
                     <div className="col text-box">
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
+
                     <div className="col text-box">
+
                         <div class="input-group">
                             <input type="text" class="form-control rounded" id="address-search" placeholder="Address" aria-label="Search" aria-describedby="search-addon" />
                             <button type="button" class="btn btn-outline-primary" onClick={() => GetAddress()}>Search</button>
@@ -134,7 +137,9 @@ export function MapScreen() {
                         {LocationMarkers}
                         </MapContainer>
                     </div>
+
                     <div className="col text-box card-box">
+
                         <div className={filterWarning ? "warning" : "hidden"}>No Locations Found</div>
                         {LocationCard}     
                     </div>
