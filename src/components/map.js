@@ -28,10 +28,11 @@ export function MapScreen() {
             filteredPlaces = allPlaces.filter((item) => {
                 const eventRequirementsArray = [];
                 let applicableFilters = 0;
-                const dayOpen = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
+                const dayOpen = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
                 if("availability" in radioValueObj) {
                     const upcomingEventValue = radioValueObj.availability;
-                    const todayDay = dayOpen[todayDate.getDay()-1];
+                    const todayDay = dayOpen[todayDate.getDay()];
+
                     console.log(item.days + "  " + todayDay + "  " + todayDate.getDay());
                     if((item.days.includes(todayDay) && todayDate.getHours() <= item.hours[1] && todayDate.getHours() >= item.hours[0]) || upcomingEventValue === "all") {
                         applicableFilters++;
@@ -117,13 +118,13 @@ export function MapScreen() {
     
     return (
         <section className="content-box">
-            <div className="container-fluid">
                 <div className="row">
-                    <div className="col text-box map-box">
+                    <div className="col text-box">
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
-                    <div class="w-100"></div>
-                    <div className="col text-box map-box">
+
+                    <div className="col text-box">
+
                         <div class="input-group">
                             <input type="text" class="form-control rounded" id="address-search" placeholder="Address" aria-label="Search" aria-describedby="search-addon" />
                             <button type="button" class="btn btn-outline-primary" onClick={() => GetAddress()}>Search</button>
@@ -136,13 +137,13 @@ export function MapScreen() {
                         {LocationMarkers}
                         </MapContainer>
                     </div>
-                    <div class="w-100"></div>
-                    <div className="col text-box map-box">
+
+                    <div className="col text-box card-box">
+
                         <div className={filterWarning ? "warning" : "hidden"}>No Locations Found</div>
                         {LocationCard}     
                     </div>
                 </div>
-            </div>
             <footer>
                 <p>Copyright &copy; 2022 INFO 442 Group D</p>
                 <p>Contact Info: Dawgs-E-Cycling </p>

@@ -35,6 +35,7 @@ main {
   width: 100%;
   height: 60px;
   border-bottom: 2px solid black;
+  z-index: 10000;
 }
 
 .navigation-links {
@@ -85,16 +86,13 @@ main {
   color: #000000;
   background-color: #EEF1F4;
   font-size: 20px;
-}
-
-.map-box {
   margin: 1%;
-  height: 100vh;
-  overflow: auto;
+  max-height: 100vh;
 }
 
-.w-100 {
-  display: none;
+.card-box {
+  overflow:scroll;
+  overflow-x:hidden;
 }
 
 .card {
