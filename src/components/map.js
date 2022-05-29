@@ -122,6 +122,7 @@ export function MapScreen() {
                     <div className="col text-box map-box">
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
+                    <div class="w-100"></div>
                     <div className="col text-box map-box">
                         <div class="input-group">
                             <input type="text" class="form-control rounded" id="address-search" placeholder="Address" aria-label="Search" aria-describedby="search-addon" />
@@ -135,6 +136,7 @@ export function MapScreen() {
                         {LocationMarkers}
                         </MapContainer>
                     </div>
+                    <div class="w-100"></div>
                     <div className="col text-box map-box">
                         <div className={filterWarning ? "warning" : "hidden"}>No Locations Found</div>
                         {LocationCard}     
