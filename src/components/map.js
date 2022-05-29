@@ -28,35 +28,38 @@ export function MapScreen() {
             filteredPlaces = allPlaces.filter((item) => {
                 const eventRequirementsArray = [];
                 let applicableFilters = 0;
+                const dayOpen = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"]
                 if("availability" in radioValueObj) {
-                const upcomingEventValue = radioValueObj.availability;
-                if((todayDate.getHours() <= item.hours[1] && todayDate.getHours() >= item.hours[0]) || upcomingEventValue === "all") {
-                    applicableFilters++;
-                    eventRequirementsArray.push(true);
-                } else {
-                    return false;
-                }
+                    const upcomingEventValue = radioValueObj.availability;
+                    const todayDay = dayOpen[todayDate.getDay()];
+                    console.log(item.days + "  " + todayDay + "  " + todayDate.getDay());
+                    if((item.days.includes(todayDay) && todayDate.getHours() <= item.hours[1] && todayDate.getHours() >= item.hours[0]) || upcomingEventValue === "all") {
+                        applicableFilters++;
+                        eventRequirementsArray.push(true);
+                    } else {
+                        return false;
+                    }
                 }
                 if("location" in checkboxObj && checkboxObj.location.length) { //checks location of each event
-                applicableFilters++;
-                for(let placeFilter of checkboxObj.location) {
-                    if(placeFilter === item.location) {
-                        eventRequirementsArray.push(true);
+                    applicableFilters++;
+                    for(let placeFilter of checkboxObj.location) {
+                        if(placeFilter === item.location) {
+                            eventRequirementsArray.push(true);
+                        }
                     }
-                }
                 }
                 if("day_of_week" in checkboxObj && checkboxObj.day_of_week.length) { //checks time of day of each event
-                applicableFilters++;
-                for(let timeFilter of checkboxObj.day_of_week) {
-                    if(item.days.includes(timeFilter)) {
-                        eventRequirementsArray.push(true);
+                    applicableFilters += checkboxObj.day_of_week.length;
+                    for(let timeFilter of checkboxObj.day_of_week) {
+                        if(item.days.includes(timeFilter)) {
+                            eventRequirementsArray.push(true);
+                        }
                     }
                 }
-                }
                 if(eventRequirementsArray.length === applicableFilters) {
-                return true;
+                    return true;
                 }
-                return false;
+                    return false;
             });
             if(_.isEmpty(filteredPlaces)) { //current Places are the same
                 setFilterWarning(true);
@@ -114,12 +117,11 @@ export function MapScreen() {
     
     return (
         <section className="content-box">
-            <div className="container-fluid">
                 <div className="row">
-                    <div className="col text-box map-box">
+                    <div className="col text-box">
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
-                    <div className="col text-box map-box">
+                    <div className="col text-box">
                         <div class="input-group">
                             <input type="text" class="form-control rounded" id="address-search" placeholder="Address" aria-label="Search" aria-describedby="search-addon" />
                             <button type="button" class="btn btn-outline-primary" onClick={() => GetAddress()}>Search</button>
@@ -132,12 +134,11 @@ export function MapScreen() {
                         {LocationMarkers}
                         </MapContainer>
                     </div>
-                    <div className="col text-box map-box">
+                    <div className="col text-box card-box">
                         <div className={filterWarning ? "warning" : "hidden"}>No Locations Found</div>
                         {LocationCard}     
                     </div>
                 </div>
-            </div>
             <footer>
                 <p>Copyright &copy; 2022 INFO 442 Group D</p>
                 <p>Contact Info: Dawgs-E-Cycling </p>
