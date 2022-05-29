@@ -28,35 +28,38 @@ export function MapScreen() {
             filteredPlaces = allPlaces.filter((item) => {
                 const eventRequirementsArray = [];
                 let applicableFilters = 0;
+                const dayOpen = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"]
                 if("availability" in radioValueObj) {
-                const upcomingEventValue = radioValueObj.availability;
-                if((todayDate.getHours() <= item.hours[1] && todayDate.getHours() >= item.hours[0]) || upcomingEventValue === "all") {
-                    applicableFilters++;
-                    eventRequirementsArray.push(true);
-                } else {
-                    return false;
-                }
+                    const upcomingEventValue = radioValueObj.availability;
+                    const todayDay = dayOpen[todayDate.getDay()-1];
+                    console.log(item.days + "  " + todayDay + "  " + todayDate.getDay());
+                    if((item.days.includes(todayDay) && todayDate.getHours() <= item.hours[1] && todayDate.getHours() >= item.hours[0]) || upcomingEventValue === "all") {
+                        applicableFilters++;
+                        eventRequirementsArray.push(true);
+                    } else {
+                        return false;
+                    }
                 }
                 if("location" in checkboxObj && checkboxObj.location.length) { //checks location of each event
-                applicableFilters++;
-                for(let placeFilter of checkboxObj.location) {
-                    if(placeFilter === item.location) {
-                        eventRequirementsArray.push(true);
+                    applicableFilters++;
+                    for(let placeFilter of checkboxObj.location) {
+                        if(placeFilter === item.location) {
+                            eventRequirementsArray.push(true);
+                        }
                     }
-                }
                 }
                 if("day_of_week" in checkboxObj && checkboxObj.day_of_week.length) { //checks time of day of each event
-                applicableFilters++;
-                for(let timeFilter of checkboxObj.day_of_week) {
-                    if(item.days.includes(timeFilter)) {
-                        eventRequirementsArray.push(true);
+                    applicableFilters += checkboxObj.day_of_week.length;
+                    for(let timeFilter of checkboxObj.day_of_week) {
+                        if(item.days.includes(timeFilter)) {
+                            eventRequirementsArray.push(true);
+                        }
                     }
                 }
-                }
                 if(eventRequirementsArray.length === applicableFilters) {
-                return true;
+                    return true;
                 }
-                return false;
+                    return false;
             });
             if(_.isEmpty(filteredPlaces)) { //current Places are the same
                 setFilterWarning(true);
