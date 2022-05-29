@@ -99,13 +99,16 @@ main {
   margin: 3%;
 }
 
+.w-100 {
+  display: none;
+}
+
 .card-color {
   background-color: #CCEACA;
 }
 
 .leaflet-container {
   min-height: 80vh;
-  width: 100%;
 }
 
 .h2 {

@@ -122,7 +122,7 @@ export function MapScreen() {
                     <div className="col text-box">
                     <FilterMenu handleFiltersCallback={handleFilters}/>
                     </div>
-
+                    <div class="w-100"></div>
                     <div className="col text-box">
 
                         <div class="input-group">
@@ -137,7 +137,7 @@ export function MapScreen() {
                         {LocationMarkers}
                         </MapContainer>
                     </div>
-
+                    <div class="w-100"></div>
                     <div className="col text-box card-box">
 
                         <div className={filterWarning ? "warning" : "hidden"}>No Locations Found</div>
