@@ -45,6 +45,7 @@ export function FaqScreen() {
       <div className="searchbox">
         <form>
             <input type="text" placeholder=" Search for answers" name="search" id="search"/>
+            <button type="submit" class="btn btn-outline-primary">Search</button>
         </form>
       </div>
 
