@@ -61,20 +61,20 @@ export function FaqScreen() {
       <p className="categories-title">Frequently Asked Questions</p>
       
       <div className="text-box" id="2">
-        <span className="question" id="q2">
+        <div className="question" id="q2">
         What about my other electronics?
-        </span>
+        </div>
         <p id="a2">
           Recycling locations for covered electronic products may also take peripherals (such as mice, keyboards, speakers, printers, and scanners), cell phones, MP3 players, game consoles, and DVD players. Check 
-          <a href="http://1800recycle.wa.gov/">1-800 RECYCLE.</a> and call ahead to see what items a recycler will accept. To find electronics recyclers near you, visit 
-          <a href="http://1800recycle.wa.gov/">1-800 RECYCLE.</a>
+          <a href="http://1800recycle.wa.gov/"> 1-800 RECYCLE.</a> and call ahead to see what items a recycler will accept. To find electronics recyclers near you, visit 
+          <a href="http://1800recycle.wa.gov/"> 1-800 RECYCLE.</a>
         </p>
       </div>
 
       <div className="text-box" id="3">
-        <span className="question" id="q3">
+        <div className="question" id="q3">
         Why recycle electronics?
-        </span>
+        </div>
         <p id="a3">
           Many electronic devices, especially TVs and computers, contain toxic materials such as lead, cadmium and mercury. 
           Reusing and recycling electronics keeps these toxic materials out of our landfills and incinerators and also recovers valuable resources.
@@ -86,12 +86,12 @@ export function FaqScreen() {
           
       
       <div className="text-box" id="4"> 
-        <span className="question" id="q4">
+        <div className="question" id="q4">
           What if my recycle equipment still works?
-        </span>
+        </div>
         <p id="a4">
           Before you get rid of your old TV, computer, or other electronic device, you can check out a website like ifixit.com for tips on how to upgrade or repair it.
-          <a href="https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1000715.PDF">Do the PC Thing: Donate</a> 
+          <a href="https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1000715.PDF"> Do the PC Thing: Donate</a> 
           - Information from the Environmental Protection Agency (EPA) on donating your computer for reuse.
         </p>
       </div>
@@ -99,9 +99,9 @@ export function FaqScreen() {
           
         
       <div className="text-box" id="5">
-        <span className="question" id="q5">
+        <div className="question" id="q5">
           What is banned from the landfill?
-        </span>
+        </div>
         <p id="a5">
           Almost any product with a circuit board is now banned from the landfill and considered universal waste and, as such, 
           requires special handling. Like used motor oil and paint, universal waste is a kind of hazardous waste.
@@ -111,23 +111,23 @@ export function FaqScreen() {
           
       <div className="text-box" id="6">
         <p>
-          <span className="question" id="q6">
+          <div className="question" id="q6">
             Where can I find computer manufacturer's exchanges, takebacks, and recycling information?
-          </span>
+          </div>
           <ul id="a6">
-            <li>  Dell Computer Exchange - <a href="http://content.dell.com/us/en/corp/cr-dell-earth-recycling.aspx">http://content.dell.com/us/en/corp/cr-dell-earth-recycling.aspx</a></li>
-            <li>HP Computer Exchange - <a href="http://www.hp.com/go/recycle">http://www.hp.com/go/recycle</a></li>
-            <li>Gateway Computer Exchange - <a href="http://www.gateway.com/gw/en/US/content/recycling">http://www.gateway.com/gw/en/US/content/recycling</a></li>
-            <li>Apple Computer Exchange - <a href="http://www.apple.com/environment/">http://www.apple.com/environment/</a></li>
+            <li><a href="http://content.dell.com/us/en/corp/cr-dell-earth-recycling.aspx">Dell Computer Exchange</a></li>
+            <li><a href="http://www.hp.com/go/recycle">HP Computer Exchange</a></li>
+            <li><a href="http://www.gateway.com/gw/en/US/content/recycling">Gateway Computer Exchange</a></li>
+            <li><a href="http://www.apple.com/environment/">Apple Computer Exchange</a></li>
           </ul>
         </p>
       </div>
 
       <p className='categories-title'>Accepted Electronics</p> 
       <div className="text-box" id="1">
-        <span className="question" id="q1">
+        <div className="question" id="q1">
         What Can I typically recycle for free? 
-        </span>   
+        </div>   
         <p id="a1">                                                                               
           <ul>
             <li>Televisions</li>
@@ -144,11 +144,11 @@ export function FaqScreen() {
 
       <p className='categories-title'>Additional Information</p> 
       <div className="text-box" id="7">
-          <span className="question" id="q7">
+          <div className="question" id="q7">
             Where can I find additional information?
-          </span>
+          </div>
           <p id="a7">
-          U.S. Environmental Protection Agency  - <a href=" https://www.epa.gov/recycle/electronics-donation-and-recycling"> https://www.epa.gov/recycle/electronics-donation-and-recycling</a>
+          <a href=" https://www.epa.gov/recycle/electronics-donation-and-recycling">U.S. Environmental Protection Agency</a>
           </p>
       </div>
       <footer>
