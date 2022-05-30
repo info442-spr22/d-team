@@ -215,4 +215,9 @@ footer {
     .navigation-links {
       margin-left: 0;
     }
+
+    .nav-brand-name {
+      padding-top: 20px;
+      font-size: 24px;
+    }
 }
